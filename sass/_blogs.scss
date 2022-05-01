@@ -1,0 +1,66 @@
+@import "color";
+@import"mixin";
+
+.blogs{
+
+    & .box-container-blogs{
+          
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        gap: 1.5rem;
+        
+       & .box{
+
+                  border: $border;
+
+                  & .image{
+                      height: 25rem;
+                      overflow: hidden;
+                      width: 100%;
+
+                      & img{
+
+                        height: 100%;
+                        object-fit: cover;
+                        width: 100%;
+                      }
+                  }
+
+            &:hover .image img{
+                transform: scale(1.2);
+            } 
+            
+            & .content{
+                padding: 2rem;
+
+                & .title{
+                    font-size: 2.5rem;
+                    line-height: 1.5rem;
+                    color: #fff;
+
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+
+                & span{
+                    color: $main-color;
+                    display: block;
+                    padding-top: 1rem;
+                    font-size: 2rem;
+                }
+
+
+                & p{
+                    font-size: 1.6rem;
+                    line-height: 1.8rem;
+                    color: #ccc;
+                    padding: 1rem 0;
+                }
+                
+            }
+
+        }
+
+    }
+}

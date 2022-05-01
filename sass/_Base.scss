@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans:ital,wght@0,600;1,700&family=Nunito:ital@1&family=Roboto:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans:ital,wght@0,600;1,700&family=Nunito:ital@1&family=Roboto:wght@100&display=swap');
+@import "color";
+@import "mixin";
+*{
+    font-family: 'Roboto', sans-serif;
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior:smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+background-color: #fff;
+border-radius: 5rem;
+}
+
+
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+
+      & span{
+        color: $main-color;
+        text-transform: uppercase;
+
+      }
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: $main-color;
+    cursor: pointer;
+
+    &:hover{
+
+        letter-spacing: .2rem;
+    }
+}
+
+body{
+    background-color:$bg;
+    overflow: hidden;
+}
+
+.container-fluid{
+    max-width: 1600px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.search-box-light{
+    background-color:$black;
+    color: $white;
+}
+

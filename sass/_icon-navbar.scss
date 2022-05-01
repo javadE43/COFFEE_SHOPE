@@ -1,0 +1,33 @@
+// icon-navbar
+
+
+@import "mixin";
+@import "color";
+
+
+.icons{
+  @include flex();
+
+
+    & div>svg{
+        color: inherit;
+        cursor: pointer;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        color: inherit;
+
+          &:hover{
+              color: $main-color;
+          }
+    }
+}
+
+
+#menu-btn{
+    display: none;
+}
+
+.search_icon{
+  display: none;
+}
+

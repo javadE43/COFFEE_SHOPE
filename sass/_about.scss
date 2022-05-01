@@ -1,0 +1,73 @@
+@import "color";
+@import "mixin";
+
+
+.about{
+       color: $white;
+       background-color: $black;
+
+       & h1{
+         color: inherit;
+       }
+     & .row{
+         @include flex($justi:initial,$align:initial,$wrap:wrap);
+         background: inherit;
+         
+         & .image{
+             flex: 1 1 45rem;
+              overflow: hidden;
+              border-radius: .768rem;
+            & .about_slide{
+              & img{
+                width: 100%;
+            }
+          }
+
+
+         }
+       
+         & .content{
+             flex: 1 1 45rem;
+             padding: 2rem;
+
+             & .text-about{
+               margin-top: 7rem;
+               height: 158px;
+               overflow: hidden;
+               max-height: none;
+               transition: height 0.75s ease;
+             }
+              & h3{
+                    
+                font-size: 3rem;
+                color: inherit;
+
+              }
+
+              & p{
+                    
+                font-size: 1.6rem;
+                color: #ccc;
+                padding: 1rem 0;
+                line-height: 1.8;
+              }
+
+              & .show_more{
+                  
+                text-align: center;
+                display: block;
+                color: #fff;
+                font-size: 1.5rem;
+                padding: 1rem 0 0 0;
+              }
+         }
+         
+     }
+
+
+}
+
+
+.collaps{
+  height: 80% !important;
+}

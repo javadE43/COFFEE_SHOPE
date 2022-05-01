@@ -1,0 +1,66 @@
+@import "color";
+@import "mixin";
+
+
+
+.cart-items-container{
+  
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+        
+        & .cart-item{
+          
+            position: relative;
+            margin: 2rem 0;
+            @include flex($justi:initial,$gap:1.5rem);
+
+            & svg{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                font-size: 2rem;
+                cursor: pointer;
+
+                 &:hover{
+                    color: $main-color;
+                 }
+            }
+
+
+            & img{
+                height: 7rem;
+                width: 30%;
+                border-radius: 50%;
+                object-fit: cover; 
+            }
+
+      
+            & .content{
+
+                & h3{
+                    font-size: 2rem;
+                    color: $black;
+                    padding-bottom: 0.5rem;
+                }
+
+                & .price{
+                    font-size: 1.5rem;
+                    color: $main-color;
+
+                }
+            }
+
+
+
+        }
+
+        & .btn{
+            width: 100%;
+            @include flex();
+        }
+}

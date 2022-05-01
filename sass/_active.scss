@@ -1,0 +1,16 @@
+.navbar.active{
+    display: block;
+    right: 0 !important;
+    transition: all 0.3s ease;
+}
+
+.cart-items-container.active{
+  right: 0 ;
+  transition: all 0.3s ease;
+}
+
+
+.search-form.active{
+transform: scaleY(1);
+transition: all 0.3s ease;
+}

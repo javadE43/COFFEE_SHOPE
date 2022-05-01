@@ -1,0 +1,108 @@
+@import "color";
+@import "mixin";
+@import "Base";
+
+.home{
+    min-height: 100vh;
+    @include flex($justi:initial);
+    background: url(../image/home-3.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+     & .content{
+         max-width: 60rem;
+       & .text{
+
+        & h3{
+          font-size: 6rem;
+          text-transform: uppercase;
+          color: #fff;
+      }
+
+      & p{
+        font-family: 'Roboto', sans-serif;            
+        font-size: 2rem;
+        font-weight: lighter;
+        line-height: 1.8;
+        padding: 1rem 0;
+        color: #eee;
+      }
+       }
+
+     }
+}
+
+.slide_top_header{
+  padding: 0 !important;
+  height: auto;
+  overflow: hidden;
+
+  & img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  & ul{
+    padding: 0;
+    margin: 0;
+
+    & li{
+      position: relative;
+    }
+  }
+
+  & .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  & .slick-dots{
+     bottom: 0;
+  }
+
+
+  & .slick-prev, .slick-next{
+
+    z-index: 1;
+  }
+& .slick-next{
+  right: 0;
+}
+& .slick-prev{
+  left: 0;
+}
+
+
+// & .slick-prev::before{
+//    content: "\f053";
+// }
+// // "\f054"
+
+  & .content{
+    position: absolute;
+    top: 200px;
+    left: 7%;
+    max-width: 60rem;
+
+    & .text{
+
+      & h3{
+        font-size: 6rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    & p{
+      font-family: 'Roboto', sans-serif;            
+      font-size: 2rem;
+      font-weight: lighter;
+      line-height: 1.8;
+      padding: 1rem 0;
+      color: #eee;
+    }
+     }
+  }
+}

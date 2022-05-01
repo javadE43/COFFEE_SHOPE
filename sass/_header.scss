@@ -1,0 +1,28 @@
+@import "mixin";
+@import "color";
+
+
+.header{
+    background-color: $bg;
+    color: $white;
+    @include flex($justi:space-between);
+    padding: 1.5rem 7%;
+    border-bottom: $border;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+
+    // logo
+    & .logo{
+          @include flex();
+        & img{
+            height: 7rem;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+}
