@@ -112,45 +112,7 @@ $('.about_slide').slick({
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// task_golren
+// The code is a test and does not have the correct structure
 
 class ElementNode{
     constructor(){
@@ -168,16 +130,7 @@ class ElementNode{
     }
 }
 
-
-
-
-
-
 // gotop_btn
-
-
-
-
 
 class Scrollbtn extends ElementNode{
     constructor(){
@@ -223,22 +176,6 @@ class GotopBtn extends Scrollbtn{
                 this.scrollbtn(this.nodeGotop,50)
             }
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // seachInput_box
@@ -325,18 +262,6 @@ class SeachBox extends InputValueSearch{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // toggle_theme
 
 class ToggleTheme extends ElementNode{
@@ -358,18 +283,6 @@ class ToggleTheme extends ElementNode{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // show_More_Btn
